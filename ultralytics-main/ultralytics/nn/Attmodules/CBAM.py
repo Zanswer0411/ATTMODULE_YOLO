@@ -18,7 +18,7 @@ class CBAM(nn.Module):
         )
 
         pad = kernel_size // 2
-        self.spatial = nn.=Conv2d(2, 1, 
+        self.spatial = nn.Conv2d(2, 1, 
                                 kernel_size=kernel_size, padding=pad, bias=False)
 
         self.sigmoid = nn.Sigmoid()
