@@ -1632,7 +1632,7 @@ def parse_model(d, ch, verbose=True):
     )
 
     #添加注意力机制模块
-    attn_modules = frozenset({CBAM,})
+    attn_modules = frozenset({CBAM, SE})
 
     for i, (f, n, m, args) in enumerate(d["backbone"] + d["head"]):  # from, number, module, args
         m = (
